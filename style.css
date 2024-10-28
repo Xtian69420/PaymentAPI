@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    display: flex; /* Centering the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    background: #1c1c1c; /* Dark gray background for the form */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff; /* White border */
+}
+
+h1 {
+    text-align: center;
+    color: #fff; /* White text */
+    margin-bottom: 20px;
+    font-size: 28px; /* Larger heading */
+    letter-spacing: 1px; /* Space between letters */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc; /* Lighter gray for labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Darker background for input */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size for input */
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #fff; /* White border on focus */
+    outline: none; /* Remove outline */
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff; /* White background for button */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Larger button text */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s, color 0.3s;
+    letter-spacing: 1px; /* Space between letters */
+}
+
+button:hover {
+    background-color: #ccc; /* Light gray background on hover */
+    color: #000; /* Keep text color black */
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for heading */
+    }
+
+    button {
+        font-size: 16px; /* Smaller button text */
+    }
+}
