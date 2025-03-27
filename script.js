@@ -14,7 +14,7 @@ document.getElementById('payment-form').addEventListener('submit', async functio
             method: 'POST',
             headers: {
                 'accept': 'application/json',
-                'Authorization': 'Basic ' + btoa('sk_live_3XPQRNFVb5cHTeK46Jh2AXCG:'),
+                'Authorization': 'Basic ' + btoa('sk_test_3XPQRNFVb5cHTeK46Jh2AXCG:'),
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
